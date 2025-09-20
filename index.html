@@ -1,26 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cordalis — Em breve</title>
-  <meta name="description" content="Cordalis — Em breve. Presentes católicos para casais." />
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-  <style>
-    html,body{
-      height:100%;margin:0;
-    }
-    body{
-      display:flex;align-items:center;justify-content:center;
-      background-color:#000;
-    }
-    img{
-      width:100%;height:100%;object-fit:cover;display:block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cordalis</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-  <!-- Substitua assets/hero.jpg pela imagem exportada do Canva -->
-  <img src="assets/hero.jpg" alt="Cordalis — Em breve" />
+    <picture>
+        <!-- Versão mobile -->
+        <source srcset="images/banner-mobile.jpg" media="(max-width: 768px)">
+        <!-- Versão desktop -->
+        <img src="images/banner-desktop.jpg" alt="Cordalis" class="banner">
+    </picture>
 </body>
+
 </html>
